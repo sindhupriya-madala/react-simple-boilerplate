@@ -1,13 +1,12 @@
 h1 {
-color: tomato;
-}
+  color: tomato; }
+
 body {
   background: white;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  margin: 70px 0;
-}
+  margin: 70px 0; }
 
 .chatbar {
   background: tomato;
@@ -17,8 +16,7 @@ body {
   left: 0;
   padding: 5px;
   position: fixed;
-  right: 0;
-}
+  right: 0; }
 
 .chatbar-message,
 .chatbar-username {
@@ -27,42 +25,34 @@ body {
   height: 40px;
   line-height: 40px;
   margin: 5px;
-  padding: 0 9px;
-}
+  padding: 0 9px; }
 
 .chatbar-message {
-  flex: 8;
-}
+  flex: 8; }
 
 .chatbar-username {
-  flex: 2;
-}
+  flex: 2; }
 
 .message {
   display: flex;
-  padding: 5px;
-}
+  padding: 5px; }
 
 .message.system {
   font-style: italic;
-  padding: 5px 20px;
-}
+  padding: 5px 20px; }
 
 .message-content,
 .message-username {
   overflow: hidden;
   margin: 5px;
-  padding: 0 10px;
-}
+  padding: 0 10px; }
 
 .message-content {
-  flex: 8;
-}
+  flex: 8; }
 
 .message-username {
   flex: 2;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .navbar {
   background: tomato;
@@ -72,8 +62,7 @@ body {
   padding: 0 10px;
   position: fixed;
   right: 0;
-  top: 0;
-}
+  top: 0; }
 
 .navbar-brand {
   color: inherit;
@@ -84,5 +73,4 @@ body {
   height: 60px;
   line-height: 60px;
   padding: 0 10px;
-  text-decoration: none;
-}
+  text-decoration: none; }
