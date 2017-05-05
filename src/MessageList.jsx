@@ -5,19 +5,23 @@ import Message from './Message.jsx';
 
 class MessageList extends Component {
 
-  constructor(props) {
-    super(props);
-    // this.state = {messages : this.props.messages}
-  }
   render() {
 
     const messages = this.props.messages.map((message) => {
       console.log(message);
-      return <Message 
-        key =  {message.id}
-        username={message.username}
-        content={message.content}
-        />
+      if(message.type === "incomingMessage") {
+        return <Message 
+          key =  {message.id}
+          username={message.username}
+          content={message.content}
+          color = {message.color}
+          />
+      } else if(message.type === "incomingNotification"){
+        return <Message
+          key = {message.id}
+          notification = {message.content}
+          />
+      }
     })  
     return (
       <main className="messages">
